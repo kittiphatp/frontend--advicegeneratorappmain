@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+:root {
+    --Light-cyan: hsl(193, 18%, 54%);
+    --Neon-green: hsl(150, 100%, 66%);
+    --Grayish-blue: rgba(78, 93, 115, .5);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-Blue);
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+}
+
+section {
+    width: 45%;
+    height: 70%;
+    /* min-height: 400px; */
+    background-color: var(--Grayish-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+header, main, footer { 
+    width: 80%; 
+    text-align: center; 
+}
+
+header {
+    height: 20%;
+    color: var(--Neon-green);
+    font-size: 0.3em;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 50%;
+    color: var(--Light-cyan);
+    font-size: 0.8em;
+    font-weight: 900;
+    word-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer {
+    height: 40%;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -75px;
+}
+
+.separator-line {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.separator-line > .line-first,
+.separator-line > .line-last {
+    width: 45%;
+    height: 1px;
+    background-color: var(--Light-cyan);
+}
+
+.separator-line > .quote-sign {
+    width: 10%;
+    height: 35px;
+    font-size: 2.5em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 15px;
+
+}
+
+.btn-advice {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--Neon-green);
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+
+
+.attribution { margin-top: 10px; font-size: 11px; text-align: center; color:#fff;}
+.attribution a { color: #fff; }
+ 
